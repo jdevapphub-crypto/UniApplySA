@@ -1,0 +1,22 @@
+{
+  "name": "UniApplySA",
+  "short_name": "UniApplySA",
+  "description": "Apply to South African Universities",
+  "start_url": "/UniApplySA/",
+  "scope": "/UniApplySA/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0d47a1",
+  "icons": [
+    {
+      "src": "/UniApplySA/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/UniApplySA/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
