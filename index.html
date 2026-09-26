@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>UniApply SA - Apply to All South African Universities Online 2026</title>
-   <link rel="icon" type="image/png" href="icon.png">
+<link rel="icon" type="image/png" href="icon.png">
 <link rel="apple-touch-icon" href="icon.png">
 <meta name="description" content="UniApply SA helps Matric students apply to UCT, Wits, UP, Stellenbosch and all SA universities in one place. Free university application guide 2026.">
 <meta name="keywords" content="university application south africa, apply university online, UCT application, Wits application, UniApply SA">
@@ -15,6 +15,9 @@
 <meta property="og:description" content="Apply to all South African universities in one place.">
 <meta property="og:url" content="https://uni-apply-sa.vercel.app/" />
 <link rel="canonical" href="https://uni-apply-sa.vercel.app/" />
+<link rel="manifest" href="/UniApplySA/manifest.json">
+<meta name="theme-color" content="#0d47a1">
+<link rel="apple-touch-icon" href="/UniApplySA/icon-192.png">
 
 <!-- ✅ ADSENSE LIBRARY - MUST BE IN HEAD -->
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5326242742377705" crossorigin="anonymous"></script>
@@ -476,5 +479,13 @@ Built by JDev App Craft Co. | Joheliv Labs<br>
 <span style="font-size:11px">This site is not affiliated with any university. Official fees are paid directly to universities.</span>
 </p>
 </footer>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('/UniApplySA/sw.js')
+      .then(() => console.log('PWA ready'))
+  });
+}
+</script>
 </body>
 </html>
